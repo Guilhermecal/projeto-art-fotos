@@ -1,0 +1,53 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*imagens full
+*/
+.bg-image {
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*imagens usadas*/
+.img1 {
+    background-image: url("../imagens/patins.jpg")
+}
+.img2 {
+    background-image: url("../imagens/juma.jpg")
+}
+.img3 {
+    background-image: url('../imagens/martim-pescador.jpg')
+}
+.img4 {
+    background-image: url('../imagens/elefante.jpg')
+}
+.img5 {
+    background-image: url('../imagens/tunel.jpg')
+}
+.img6 {
+    background-image: url('../imagens/golira.jpg')
+}
+
+/*texto*/
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
