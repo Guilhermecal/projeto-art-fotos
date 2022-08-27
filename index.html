@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte-Foto</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon-espiral.png" type="image/x-icon">
 </head>
 <body>
+    <div class="container" onclick="menu(this)">
+        <div id="menu" class="barra1"></div>
+        <div id="menu" class="barra2"></div>
+        <div id="menu" class="barra3"></div>
+        
+    </div>
+
+
+    <!--imagens-->
     <div class="bg-image img1"></div>
     <div class="bg-image img2"></div>
     <div class="bg-image img3"></div>
@@ -17,5 +26,11 @@
     <div class="bg-image img6"></div>
 
     <div class="bg-text">Arte Photo</div>
+<script>
+    //função do menu
+    function menu(x) {
+        x.classList.toggle("change");
+    }
+</script>
 </body>
 </html>
