@@ -1,0 +1,65 @@
+/*estilo da galeria*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    
+}
+.container {
+    
+    display: inline-block;
+    cursor: pointer;
+    
+}
+/*menu*/
+#menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.barra1, .barra2, .barra3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+/*rotacionar a barra1*/
+.change .barra1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+/*esconder barras centrais*/
+.change .barra2 {
+    opacity: 0;
+
+}
+/*rotacionar barra3*/
+.change .barra3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+#img-header {
+    
+    width: 50vw;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+    /*criar duas colunas iguais*/
+.coluna {
+    flex: 50%;
+    padding: 0 4px;
+}
+.coluna img{
+    margin-top: 8px;
+    vertical-align: middle;
+}

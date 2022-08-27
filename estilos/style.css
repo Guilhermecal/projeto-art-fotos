@@ -7,51 +7,7 @@ html, body {
     margin: 0;  
     font-family: Arial, Helvetica, sans-serif;
 }
-
-                /*menu estilo*/
-
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-    
-}
-#menu {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
-
-.barra1, .barra2, .barra3{
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.5s;
-}
-/*rotacionar a barra1*/
-.change .barra1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-/*esconder barras centrais*/
-.change .barra2 {
-    opacity: 0;
-
-}
-/*rotacionar barra3*/
-.change .barra3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-
-
-
-                /*/menu estilo */
-
-    /*estilo das imagens*/
+ /*estilo das imagens*/
 .bg-image {
     height: 100%;
     background-position: center;
@@ -94,3 +50,4 @@ html, body {
     padding: 20px;
     text-align: center;
 }
+

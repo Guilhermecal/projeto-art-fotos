@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="estilos/style-gallery.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container" onclick="menu(this)">
+            <a href="index.html">Home</a>
+            <div id="menu" class="barra1"></div>
+            <div id="menu" class="barra2"></div>
+            <div id="menu" class="barra3"></div>
+            <img id="img-header" src="imagens/mulher-pinup-foto.png" alt="">
+        </div>
+        <h1>Galeria.</h1>
+        <button onclick="um()">1</button>
+        <button onclick="dois()">2</button>
+        <button onclick="quatro()">4</button>
+    </header>
+
+    <main class="row">
+        <div class="coluna">
+            <img src="imagens/galeria/art-grafiti.jpg" alt="parede com arte art-grafiti">
+            <img src="imagens/galeria/mulher-cor.jpg" alt="mulher com roupa colorida">
+            <img src="imagens/galeria/bulbolampada.jpg" alt="">
+        </div>
+        <div class="coluna">
+            <img src="imagens/galeria/blues-player.jpg" alt="homem com guitarra">
+            <img src="imagens/galeria/bulbolampada.jpg" alt="">
+            <img src="imagens/galeria/beco-italia.jpg" alt="duas pessoas num beco italiano">
+        </div>
+        <div class="coluna">
+            <img src="imagens/galeria/grecia.jpg" alt="paisagens grega">
+            <img src="imagens/galeria/sapo.jpg" alt="sapo em cima de vitoria régia">
+            <img src="imagens/galeria/menino-pretobranco.jpg" alt="">
+        </div>
+        <div class="coluna">
+            <img src="imagens/galeria/gaivota.jpg" alt="gaivota se limpando">
+            <img src="imagens/galeria/pedras-mar.jpg" alt="pedras no mar">
+            <img src="imagens/galeria/guepardo.jpg" alt="guepardo caminhando">
+
+
+        </div>
+    </main>
+
+
+    <script>
+        //função do menu
+        function menu(x) {
+            x.classList.toggle("change");
+        }
+
+        //galeria
+        var elementos = document.getElementByClassName("coluna");
+
+        //declarar uma variavel de loop
+        var i;
+
+        //imagens full width
+        function um() {
+            for (i = 0; i < elementos.length; i++){
+                elementos[i].style.flex = "100%"
+            }
+        }
+        //duas imagens por coluna
+        function dois() {
+            for (i = 0; i < elementos.length; i++){
+                elementos[i].style.flex = "50%";
+            }
+        }
+        //quatro colunas de imagens
+        function quatro() {
+            for (i = 0; i < elementos.length; i++){
+                elementos[i].style.flex = "25%"
+            }
+        }
+    </script>
+</body>
+</html>
