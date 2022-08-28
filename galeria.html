@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <header>
+    <header class="cabecalho" id="gridHeader">
         <div class="container" onclick="menu(this)">
             <a href="index.html">Home</a>
             <div id="menu" class="barra1"></div>
@@ -19,7 +19,7 @@
         </div>
         <h1>Galeria.</h1>
         <img id="img-header" src="imagens/mulher-pinup-foto.png" alt="">
-        
+
         <button class="btn" onclick="um()">1</button>
         <button class="btn" onclick="dois()">2</button>
         <button class="btn" onclick="quatro()">4</button>
@@ -29,12 +29,12 @@
     <main class="row">
         <div class="coluna">
             <img src="imagens/galeria/art-grafiti.jpg" alt="parede com arte art-grafiti">
-            <img src="imagens/galeria/mulher-cor.jpg" alt="mulher com roupa colorida">
-            <img src="imagens/galeria/bulbolampada.jpg" alt="">
+            <img src="imagens/galeria/corvos.jpg" alt="mulher com roupa colorida">
+            <img src="imagens/elefante.jpg" alt="">
         </div>
         <div class="coluna">
             <img src="imagens/galeria/blues-player.jpg" alt="homem com guitarra">
-            <img src="imagens/galeria/bulbolampada.jpg" alt="">
+            <img src="imagens/galeria/modelo.jpg" alt="">
             <img src="imagens/galeria/beco-italia.jpg" alt="duas pessoas num beco italiano">
         </div>
         <div class="coluna">
@@ -59,11 +59,8 @@
         }
 
         //galeria
-        var elementos = document.getElementByClassName("coluna");
-
-        //declarar uma variavel de loop
+        var elementos = document.getElementsByClassName("coluna");
         var i;
-
         //imagens full width
         function um() {
             for (i = 0; i < elementos.length; i++){
@@ -82,6 +79,21 @@
                 elementos[i].style.flex = "25%"
             }
         }
+
+        //ativar classe header
+        var header = document.getElementById("gridHeader")
+        var btns = header.getElementsByClassName("btn")
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementByClassName("active")
+                current[0].className = current[0].className.replace(" active", "")
+                this.className += " active";
+
+            });
+        }
+
+
+
     </script>
 </body>
 </html>

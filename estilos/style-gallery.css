@@ -1,4 +1,12 @@
-/*estilo da galeria*/
+/*estilo da galeria
+layout responsivo - fazendo uma coluna formar duas */
+@media screen and (max-width: 800px){
+    .coluna {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -48,6 +56,7 @@ header {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+
 /*colunas da galeria*/
 #img-header {
     display: block;
@@ -58,15 +67,6 @@ header {
     flex-wrap: wrap;
     padding: 0 4px;
 }
-/*estilo do botões*/
-.btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
-    /*criar duas colunas iguais*/
 .coluna {
     flex: 50%;
     padding: 0 4px;
@@ -74,4 +74,23 @@ header {
 .coluna img{
     margin-top: 8px;
     vertical-align: middle;
+    width: 100%;
 }
+
+/*estilo do botões*/
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover {
+    background-color: #ddd;
+}
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+    /*criar duas colunas iguais*/
