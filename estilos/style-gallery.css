@@ -6,6 +6,12 @@ layout responsivo - fazendo uma coluna formar duas */
         max-width: 50%;
     }
 }
+@media screen and (max-width: 600px){
+    .coluna {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
 * {
     box-sizing: border-box;
