@@ -31,6 +31,7 @@ header {
     height: 5px;
     background-color: black;
     margin: 6px 0;
+
 }
 
 .barra1, .barra2, .barra3{
@@ -39,6 +40,8 @@ header {
     background-color: #333;
     margin: 6px 0;
     transition: 0.5s;
+    border-color:#333;
+    background-color: white;
 }
 /*rotacionar a barra1*/
 .change .barra1 {
