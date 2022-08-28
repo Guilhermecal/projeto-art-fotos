@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="imagens/favicon-espiral.png" type="image/x-icon">
 </head>
 <body>
+    <header id="idmenu" class="menu">
+        <a href="galeria.html">Galeria</a>
+        <a href="portifolio.html">portifolio</a>
+        <a href="formulario.html">contato</a>
+    </header>
 
     <!--imagens-->
     <div class="bg-image img1"></div>
@@ -19,6 +24,19 @@
     <div class="bg-image img6"></div>
 
     <div class="bg-text">Arte Photo</div>
-
+<script>
+    //script do menu
+    window.onscroll = function() {
+        scrollFunction()
+    };
+    function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("idmenu").style.top = "0";
+        }
+        else{
+            document.getElementById("idmenu").style.top = "-50px";
+        }
+    }
+</script>
 </body>
 </html>
