@@ -9,13 +9,17 @@ html, body {
 }
  /*estilo das imagens*/
 .bg-image {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     height: 100%;
-    background-position: center;
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 /*imagens usadas*/
 .img1 {
-    background-image: url("../imagens/patins.jpg")
+    background-image: url("../imagens/astronauta.jpg")
 }
 .img2 {
     background-image: url("../imagens/juma.jpg")
