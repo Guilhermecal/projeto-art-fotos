@@ -115,7 +115,7 @@ header {
 .legenda {
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 600px;
 }
 .overlay{
     position: absolute;

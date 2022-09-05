@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro para contato</title>
+    <style>
+        html {
+            height: 100%;
+            
+
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url('imagens/galeria/pexels-noelle-otto-906052.jpg');
+            min-height: 380px;
+
+            /*centralizar adquadamente*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        /*estilo do formulario*/
+        .container {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+        }
+        /*full width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background-color: #f1f1f1;
+        }
+         input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+         }
+
+        /*estilizando botao*/
+        .btn {
+            background-color: #04aa6d;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+       
+
+    </style>
 </head>
 <body>
     <h1>cadastro.</h1>
+    <main class="bg-img">
+        <form action="action_page.php" class="container">
+
+            <h1>Login</h1>
+
+            <label for="idemail"><b>Email</b></label>
+            <input type="text" placeholder="insira o Email" name="email" required><br>
+
+            <label for="idsenha"><b>Senha:</b></label>
+            <input type="password" placeholder="entre com a senha" name="senha" id="idsenha"><br>
+
+            <button type="submit" class="btn">Login</button><br>
+        </form>
+    </main>
 </body>
 </html>
