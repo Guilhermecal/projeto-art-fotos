@@ -9,22 +9,28 @@
 </head>
 <body>
     
-    <header class="cabecalho" id="gridHeader">
-        <div class="container" onclick="menu(this)">
-            <a href="index.html">Home</a>
-            <div id="menu" class="barra1"></div>
-            <div id="menu" class="barra2"></div>
-            <div id="menu" class="barra3"></div>
-            
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="formulario.html">Agenda sessão</a>
+        <a href="portifolio.html">portifolio</a>
+        
+    </div>
+    <span onclick="openNav()">Abrir</span>
+    
+    
+
+
+    <header>
         <h1>Galeria.</h1>
-        <a href="index.html"><abbr title="Home"><img id="img-header" src="imagens/mulher-pinup-foto.png" alt=""></abbr></a>
+        <img id="img-header" src="imagens/mulher-pinup-foto.png" alt="">
+    </header>
 
         <button class="btn" onclick="um()">1</button>
         <button class="btn" onclick="dois()">2</button>
         <button class="btn" onclick="quatro()">4</button>
         
-    </header>
+    
 
     <main class="row">
         <div class="coluna">
@@ -64,8 +70,17 @@
 
     <script>
         //função do menu
-        function menu(x) {
-            x.classList.toggle("change");
+        function openNav(){
+            document.getElementById('mySidenav').style.width = "250px";
+            document.getElementsByTagName('main').style.marginLeft = '250px';
+            document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.4';
+            
+        }
+        function closeNav(){
+            document.getElementById('mySidenav').style.width = '0';
+            document.getElementsByTagName('main').style.marginLeft = '0'
+            document.body.style.backgroundColor = 'white'
+
         }
 
         //galeria
@@ -101,9 +116,6 @@
 
             });
         }
-
-
-
     </script>
 </body>
 </html>
