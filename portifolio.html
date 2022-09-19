@@ -5,13 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio.</title>
+    <link rel="stylesheet" href="estilos/estilo-portifolio.css">
 </head>
 <body>
     <div id="bntcontainer">
-        <button class="btn" onclick="selecao()">Mostrar todas</button>
-        <button class="btn">retrato</button>
-        <button class="btn">paisagens</button>
+        <button class="btn active" onclick="selecao('all')">Mostrar todas</button>
+        <button class="btn">natureza</button>
+        <button class="btn">fotos</button>
+        <button class="btn">Retratos</button>
     </div>
-    
+
+    <!--galeria portifolio grid-->
+    <main class="row">
+        <section class="coluna natureza">
+            <div class="content">
+                <img src="imagens/portifolio/natureza/gato-montanha.jpg" alt="">
+                <h4>Gato da Montanha</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, beatae optio odio quaerat culpa vitae quibusdam quos officiis minus amet molestias eos maiores at asperiores doloremque quia corporis ut atque!</p>
+            </div>
+        </section>
+        <section  class="coluna natureza">
+            <div class="content">
+                <img src="imagens/portifolio/natureza/lobo.jpg" alt="lobo">
+                <h4>Lobo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi vel accusamus, ullam molestiae porro at eligendi rem quod earum beatae molestias quasi inventore eaque omnis ratione dolor deleniti voluptatem?</p>
+            </div>
+        </section>
+        <section class="coluna natureza">
+            <div class="content">
+                <img src="imagens/portifolio/natureza/passaro.jpg" alt="">
+                <h4>Pássaro</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit est suscipit, ducimus dolores delectus accusantium dolorem? Dolorem, qui! Numquam sint provident at quaerat natus exercitationem quibusdam. Ullam, ab nostrum?</p>
+            </div>
+        </section>
+        <section class="coluna corpo">
+            <div class="content">
+                <img src="imagens/portifolio/corpo/mulher.jpg" alt="">
+                <h4>modelo </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis quae necessitatibus saepe veniam commodi laboriosam? Ea voluptatum illum provident vel quasi dolorum explicabo ullam. Maxime autem optio tenetur excepturi!</p>
+            </div>
+        </section>
+        <section class="coluna corpo">
+            <div class="content">
+                <img src="imagens/portifolio/corpo/nice-3348726_1280.jpg" alt="tattoo">
+                <h4>Modelo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A in culpa ea harum illum, enim aliquam excepturi minima labore libero omnis? Eum quia similique quidem nulla odio consectetur ipsam dolore?</p>
+
+            </div>
+        </section>
+        <section class="coluna corpo">
+            <div class="content">
+                <img src="imagens/portifolio/corpo/pretobranco.jpg" alt="corpo">
+                <h4>modelo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nulla omnis voluptates quas, perferendis numquam dicta sapiente quis, beatae, explicabo incidunt aut ex? Atque necessitatibus, incidunt perferendis impedit earum reiciendis.</p>
+            </div>
+        </section>
+        <section class="coluna retrato">
+            <div>
+                <img src="imagens/portifolio/retratos/louradaterra.jpg" alt="">
+                <h4>modelo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo in accusantium eum quisquam veniam quas excepturi assumenda ex cumque, qui ratione quod et atque iure, officiis libero dolores autem. Dolorem.</p>
+            </div>
+        </section>
+        <section class="coluna retrato">
+            <div class="content">
+                <img src="imagens/portifolio/retratos/lourapraia.jpg" alt="loura praia">
+                <h4>modelo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui quis veniam similique sed consectetur harum dolorem quaerat totam saepe laudantium et error, debitis nemo ratione repellat consequatur, culpa, velit commodi.</p>
+            </div>
+        </section>
+        <section class="coluna retrato">
+            <div class="content">
+                <img src="imagens/portifolio/retratos/modelo-kely.jpg" alt="modelo kelly">
+                <h4>modelo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum quia vero maiores, hic magni reiciendis ipsa similique doloribus officia eos dolor quod? Aperiam debitis, ex quam ut eius accusantium!</p>
+            </div>
+        </section>
+    </main>
+    <script src="script/script-portifolio.js"></script>
 </body>
 </html>
