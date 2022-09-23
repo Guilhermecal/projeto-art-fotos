@@ -1,10 +1,12 @@
 @charset "UTF-8";
-@media screen and (min-width: 250px) and (max-width: 600px;) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
     body{
-        width: 80vw;
+        float: left;
+        margin: auto;
+        width: 60vw;
     }
     .bg-image {
-        width: 100%;
+        width: 100vw;
     }
 }
 * {
@@ -13,8 +15,8 @@
 }
 html, body {
     height: 100%;
-    width: 100vw;
-    margin: 0;  
+    width: 98vw;
+    margin: auto;  
     font-family: Arial, Helvetica, sans-serif;
 }
 /*estilo menu*/
@@ -22,7 +24,7 @@ html, body {
     background-color: #333;
     position: fixed;
     top: -50px;/*esconde a navbar cima do 50px do topo*/
-    width: 100%;
+    width: 98vw;
     transition: top 0.3s;
     opacity: 0.8;
 }
